@@ -80,14 +80,18 @@ nav .icons {
 
 nav .icons a {
     text-decoration: none;
+}
+
+nav .icons .burger {
     color: rgb(21, 21, 100);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     transition: 0.3s ease;
 }
 
-.icons a i {
-    font-size: 1.2rem;
+.icons .burger-buttons a i {
+    font-size: 1.5rem;
+    color: rgb(21, 21, 100);
 }
 
 
@@ -669,6 +673,12 @@ footer .copyright .social i:hover {
 /*Responsive on other devices*/
 
 @media (max-width:820px) {
+    nav {
+        height: 120px;
+    }
+    nav img {
+        display: none;
+    }
     nav ul {
         display: none;
     }
@@ -676,7 +686,17 @@ footer .copyright .social i:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 50%;
+        width: 100%;
+    }
+    nav .icons .burger {
+        font-size: 2rem;
+    }
+    nav .icons .burger-buttons {
+        display: flex;
+        gap: 50px;
+    }
+    .icons .burger-buttons a i {
+        font-size: 2rem;
     }
     #Home {
         width: 100%;
@@ -730,12 +750,6 @@ footer .copyright .social i:hover {
         font-size: 2rem;
     }
     nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 1vw 5vw;
-        align-items: center;
         height: 10vh;
         background-color: #f4f6f8;
         position: fixed;
@@ -753,9 +767,15 @@ footer .copyright .social i:hover {
         justify-content: space-between;
         width: 100%;
     }
-    .icons a {
-        margin-left: 10px;
-        color: rgb(44, 44, 80);
+    nav .icons .burger {
+        font-size: 1.5rem;
+    }
+    nav .icons .burger-buttons {
+        display: flex;
+        gap: 30px;
+    }
+    .icons .burger-buttons a i {
+        font-size: 1.5rem;
     }
     #Home h2 {
         color: #fff;
