@@ -84,13 +84,13 @@ nav .icons a {
 
 nav .icons .burger {
     color: rgb(21, 21, 100);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     transition: 0.3s ease;
 }
 
 .icons .burger-buttons a i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(21, 21, 100);
 }
 
