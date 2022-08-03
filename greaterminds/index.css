@@ -772,7 +772,7 @@ footer .copyright .social i:hover {
     }
     nav .icons .burger-buttons {
         display: flex;
-        gap: 30px;
+        gap: 50px;
     }
     .icons .burger-buttons a i {
         font-size: 1.5rem;
