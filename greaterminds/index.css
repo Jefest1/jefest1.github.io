@@ -54,6 +54,13 @@ nav ul {
     align-items: center;
 }
 
+#burger-close {
+    color: rgb(21, 21, 100);
+    font-size: 2rem;
+    transition: 0.3s ease;
+    display: none;
+}
+
 nav ul li {
     list-style: none;
     margin-right: 30px;
@@ -82,7 +89,7 @@ nav .icons a {
     text-decoration: none;
 }
 
-nav .icons .burger {
+.icons #burger {
     color: rgb(21, 21, 100);
     font-size: 2rem;
     font-weight: 300;
@@ -679,8 +686,38 @@ footer .copyright .social i:hover {
     nav img {
         display: none;
     }
+    /*Styling the hamburger menu and changing the position of the ul*/
     nav ul {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        left: -220px;
+        top: 0px;
+        width: 220px;
+        height: 50vh;
+        background-color: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    /*Creating an active jquery command for the  hamburger close button*/
+    nav ul.active {
+        left: 0;
+    }
+    nav ul li {
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+        margin-left: 45px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    #burger-close {
+        display: initial;
+        color: #fff;
+        padding: 40px 0 20px 20px;
+        margin-left: 140px;
     }
     nav .icons {
         display: flex;
@@ -688,7 +725,7 @@ footer .copyright .social i:hover {
         justify-content: space-between;
         width: 100%;
     }
-    nav .icons .burger {
+    .icons #burger {
         font-size: 2rem;
     }
     nav .icons .burger-buttons {

@@ -5,9 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA=Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8da83a5fd6.js"></script>
-    <link rel="stylesheet" href="index.css">
     <title>Great Minds Edu Inc</title>
+    <link rel="stylesheet" href="index.css">
+
+
+    <script src="https://kit.fontawesome.com/8da83a5fd6.js"></script>
+    <!--Adding a jquery code-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,6 +19,7 @@
     <nav>
         <img src="images/Logo.png">
         <ul>
+            <i class="fa-solid fa-times" id="burger-close"></i>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -23,7 +28,7 @@
         </ul>
 
         <div class="icons">
-            <div class="burger"><i class="fa-solid fa-bars"></i></div>
+            <div id="burger"><i class="fa-solid fa-bars"></i></div>
             <div class="burger-buttons">
                 <a href="index.html"><i class="fa-solid fa-house"></i></a>
                 <a href="about.html"><i class="fa-solid fa-address-card"></i></a>
@@ -300,6 +305,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        $('#burger').click(function() {
+            $('nav ul').addClass('.active')
+        });
+
+        $('#burger-close').click(function() {
+            $('nav ul').removeClass('.active')
+        });
+    </script>
 </body>
 
 </html>
