@@ -17,23 +17,24 @@
 <body>
     <!--Navigation bar-->
     <nav>
-        <img src="images/Logo.png">
-        <ul>
-            <i class="fa-solid fa-times" id="burger-close"></i>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+        <img src="images/Logo3.png">
+        <div class="Navigation">
+            <ul>
+                <i class="fa-solid fa-times" id="burger-close"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="burger"></i>
+        </div>
 
-        <div class="icons">
-            <div id="burger"><i class="fa-solid fa-bars"></i></div>
-            <div class="burger-buttons">
-                <a href="index.html"><i class="fa-solid fa-house"></i></a>
-                <a href="about.html"><i class="fa-solid fa-address-card"></i></a>
-                <a href="blog.html"><i class="fa-solid fa-blog"></i></a>
-            </div>
+
+        <div class="burger-buttons">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="about.html"><i class="fa-solid fa-address-card"></i></a>
+            <a href="blog.html"><i class="fa-solid fa-blog"></i></a>
         </div>
     </nav>
 
@@ -307,11 +308,11 @@
     </footer>
     <script>
         $('#burger').click(function() {
-            $('nav ul').addClass('.active')
+            $('nav .Navigation ul').addClass('.active')
         });
 
         $('#burger-close').click(function() {
-            $('nav ul').removeClass('.active')
+            $('nav .Navigation ul').removeClass('.active')
         });
     </script>
 </body>

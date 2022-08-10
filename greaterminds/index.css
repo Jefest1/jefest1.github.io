@@ -48,7 +48,7 @@ nav img {
     height: 95px;
 }
 
-nav ul {
+nav .Navigation ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,12 +61,12 @@ nav ul {
     display: none;
 }
 
-nav ul li {
+nav .Navigation ul li {
     list-style: none;
     margin-right: 30px;
 }
 
-nav a {
+nav .Navigation a {
     text-decoration: none;
     color: rgb(21, 21, 100);
     font-size: 16px;
@@ -74,7 +74,7 @@ nav a {
     transition: 0.2s ease;
 }
 
-nav a:hover {
+nav .Navigation a:hover {
     text-decoration: none;
     color: rgb(190, 221, 16);
     font-size: 16px;
@@ -89,14 +89,19 @@ nav .icons a {
     text-decoration: none;
 }
 
-.icons #burger {
+#burger {
+    display: none;
     color: rgb(21, 21, 100);
     font-size: 2rem;
-    font-weight: 300;
     transition: 0.3s ease;
 }
 
-.icons .burger-buttons a i {
+.burger-buttons {
+    display: none;
+    gap: 15px;
+}
+
+.burger-buttons a i {
     font-size: 2rem;
     color: rgb(21, 21, 100);
 }
@@ -677,40 +682,55 @@ footer .copyright .social i:hover {
 }
 
 
+/*Courses Page*/
+
+#courses-home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(images/back_2.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
 /*Responsive on other devices*/
 
 @media (max-width:820px) {
     nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         height: 120px;
     }
     nav img {
         display: none;
     }
     /*Styling the hamburger menu and changing the position of the ul*/
-    nav ul {
+    nav .Navigation ul {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         position: absolute;
-        left: -220px;
         top: 0px;
-        width: 220px;
-        height: 50vh;
+        left: -250px;
+        width: 250px;
+        height: 70vh;
         background-color: rgba(17, 20, 104, 0.45);
         backdrop-filter: blur(4.5px);
         border: 1px solid rgba(255, 255, 255, 0.18);
+        transition: 0.4s ease;
     }
     /*Creating an active jquery command for the  hamburger close button*/
-    nav ul.active {
-        left: 0;
+    nav .Navigation ul.active {
+        left: 0px;
     }
-    nav ul li {
+    nav .Navigation ul li {
         padding: 20px 0 20px 40px;
         margin-left: 0;
         margin-left: 45px;
     }
-    nav ul li a {
+    nav .Navigation ul li a {
         color: #fff;
     }
     #burger-close {
@@ -719,20 +739,17 @@ footer .copyright .social i:hover {
         padding: 40px 0 20px 20px;
         margin-left: 140px;
     }
-    nav .icons {
+    #burger {
+        display: initial;
+        font-size: 2rem;
+    }
+    nav .burger-buttons {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
-    }
-    .icons #burger {
-        font-size: 2rem;
-    }
-    nav .icons .burger-buttons {
-        display: flex;
         gap: 50px;
     }
-    .icons .burger-buttons a i {
+    .burger-buttons a i {
         font-size: 2rem;
     }
     #Home {
@@ -792,26 +809,11 @@ footer .copyright .social i:hover {
         position: fixed;
         z-index: 1;
     }
-    nav img {
-        display: none;
-    }
-    nav ul {
-        display: none;
-    }
-    nav .icons {
+    nav .burger-buttons {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
+        gap: 30px;
     }
-    nav .icons .burger {
-        font-size: 1.5rem;
-    }
-    nav .icons .burger-buttons {
-        display: flex;
-        gap: 50px;
-    }
-    .icons .burger-buttons a i {
+    .burger-buttons a i {
         font-size: 1.5rem;
     }
     #Home h2 {
