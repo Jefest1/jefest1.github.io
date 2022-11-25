@@ -11,16 +11,32 @@
 
 <body>
     <div id="main">
-        <h1>Welcome to BMI calculator</h1>
-        <h5>Height(CM)</h5>
-        <input type="text" id="height" placeholder="Enter height"><br>
-        <h5>Weight(Kg)</h5>
-        <input type="text" id="weight" placeholder="Enter weight"><br>
-        <input type="submit" id="submit" name="submit" value="Check BMI">
+        <div class="box">
+            <h1>Welcome to BMI calculator</h1>
+            <div class="content">
+                <div class="input">
+                    <label for="height">Height(cm)</label>
+                    <input type="number" id="height" placeholder="Enter height">
+                </div>
 
-        <div id="results"></div>
+                <div class="input">
+                    <label for="weight">Weight(Kg)</label>
+                    <input type="number" id="weight" placeholder="Enter weight">
+                </div>
 
-        <div id="message"></div>
+                <button id="submit">Calculate BMI</button>
+            </div>
+
+
+            <div id="results">
+                <p>Your BMI is 0.00</p>
+            </div>
+
+            <div id="message">
+                <p>Input details to check BMI</p>
+            </div>
+        </div>
+
     </div>
 
     <script src="bmi.js"></script>

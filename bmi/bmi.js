@@ -9,7 +9,7 @@ function bmiCalculator() {
     let bmi = kg / (newCm * newCm);
     bmi = bmi.toFixed(1);
 
-    document.getElementById("results").innerHTML = bmi;
+    document.getElementById("results").innerHTML = `Your BMI is ${bmi}`;
 
     if (bmi < 18.6) {
         document.getElementById("message").innerHTML = "You're under wieght😃"

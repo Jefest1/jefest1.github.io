@@ -10,42 +10,61 @@
 
 
     <script src="https://kit.fontawesome.com/8da83a5fd6.js"></script>
-    <!--Adding a jquery code-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!--Navigation bar-->
-    <nav>
-        <img src="images/Logo3.png">
-        <div class="Navigation">
-            <ul>
-                <i class="fa-solid fa-times" id="burger-close"></i>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <i class="fa-solid fa-bars" id="burger"></i>
-        </div>
+    <header>
+        <nav>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="search-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
 
 
-        <div class="burger-buttons">
-            <a href="index.html"><i class="fa-solid fa-house"></i></a>
-            <a href="about.html"><i class="fa-solid fa-address-card"></i></a>
-            <a href="blog.html"><i class="fa-solid fa-blog"></i></a>
-        </div>
-    </nav>
+            <a href="index.html">
+                <h1 class="logo">Great Minds</h1>
+            </a>
+
+            <div class="Navigation">
+                <ul>
+                    <i class="fa-solid fa-times" id="burger-close"></i>
+                    <!-- <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li> -->
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="What do you want to learn" id="search">
+                    <button>Search</button>
+                </div>
+                <i class="fa-solid fa-bars" id="burger"></i>
+            </div>
+
+
+            <!-- <div class="burger-buttons">
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="about.html"><i class="fa-solid fa-address-card"></i></a>
+                <a href="blog.html"><i class="fa-solid fa-blog"></i></a>
+            </div> -->
+        </nav>
+    </header>
 
     <!--Home page-->
-    <section id="Home">
-        <h2>Enhace your future with Great Minds Edu Inc</h2>
-        <p>Enjoy the most of education with Great Minds Edu Inc</p>
-        <div class="btn">
-            <a href="#" class="blue">Learn More</a>
-            <a href="#" class="yellow">Visit Courses</a>
+    <section class="Home">
+        <div class="right">
+            <h2>Enhace your future with Great Minds Edu Inc</h2>
+            <p>Enjoy the most of education with Great Minds Edu Inc.......</p>
+            <div class="btn">
+                <a href="#" class="blue">Learn More</a>
+                <a href="#" class="yellow">Visit Courses</a>
+            </div>
         </div>
+        <img src="images/back_1.jpg" alt="School Building">
     </section>
 
     <!--Awesome Features-->
@@ -54,19 +73,28 @@
         <h6>We have special features that keeps our students going</h6>
         <div class="fea-base">
             <div class="fea-box">
-                <i class="fa-solid fa-graduation-cap"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                  </svg>
+
                 <h3>Scholarship Facility</h3>
                 <p>Our scholarship facility offers brilliant but needy students with scholarships</p>
             </div>
 
             <div class="fea-box">
-                <i class="fa-solid fa-earth-americas"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                  </svg>
+
                 <h3>Greater Mind Online</h3>
                 <p>Adds online classes to make the traditional class interesting</p>
             </div>
 
             <div class="fea-box">
-                <i class="fa-solid fa-award"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                  </svg>
+
                 <h3>Global Certificate</h3>
                 <p>Students get certificates that are recognised globally</p>
             </div>
@@ -222,9 +250,9 @@
         <p>Meet Some of The Greatest Tech Gurus</p>
         <div class="expert-base">
             <!--Expert Profile One-->
-            <a href="#">
-                <div class="expert-box">
-                    <img src="images/Joojo.jpg">
+            <a href="#" class="expert-box">
+                <img src="images/Joojo.jpg">
+                <div class="expert-det">
                     <h6>Anyan Jefest</h6>
                     <p>Frontend Expert</p>
                     <div class="social">
@@ -235,11 +263,11 @@
                 </div>
             </a>
 
-            <a href="#">
-                <div class="expert-box">
-                    <img src="images/Jessica.jpg">
+            <a href="#" class="expert-box">
+                <img src="images/Jessica.jpg">
+                <div class="expert-det">
                     <h6>Nana Ama Jefest</h6>
-                    <p>Dietician</p>
+                    <p>Dieticia</p>
                     <div class="social">
                         <i class="fa-brands fa-facebook-square"></i>
                         <i class="fa-brands fa-instagram-square"></i>
@@ -248,11 +276,11 @@
                 </div>
             </a>
 
-            <a href="#">
-                <div class="expert-box">
-                    <img src="images/King.jpg">
+            <a href="#" class="expert-box">
+                <img src="images/King.jpg">
+                <div class="expert-det">
                     <h6>King Holik</h6>
-                    <p>Animations Expert</p>
+                    <p>UI Designer</p>
                     <div class="social">
                         <i class="fa-brands fa-facebook-square"></i>
                         <i class="fa-brands fa-instagram-square"></i>
@@ -298,7 +326,7 @@
         </div>
 
         <div class="copyright">
-            <p>Copyright &copysr;2021 All rights reserved| This template is made by Great Minds Edu Inc</p>
+            <p>Copyright &copy;2021 All rights reserved || This template is made by Great Minds Edu Inc</p>
             <div class="social">
                 <i class="fa-brands fa-facebook-square"></i>
                 <i class="fa-brands fa-instagram-square"></i>
