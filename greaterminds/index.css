@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #495057;
+    color: #212529;
 }
 
 
@@ -801,7 +801,12 @@ footer .copyright .social i:hover {
     }
     #burger {
         display: initial;
-        font-size: 2rem;
+        font-size: 1.3rem;
+        color: #212529;
+    }
+    .search-icon {
+        display: initial;
+        stroke: #212529;
     }
     nav .burger-buttons {
         display: flex;
@@ -866,12 +871,15 @@ footer .copyright .social i:hover {
     nav {
         height: 80px;
     }
+    nav .logo {
+        letter-spacing: 0.1px;
+        font-size: 25px;
+    }
     .Navigation .search {
         display: none;
     }
     .search-icon {
         display: initial;
-        font-weight: 700;
     }
     /* nav .burger-buttons {
         display: flex;
@@ -913,7 +921,8 @@ footer .copyright .social i:hover {
         flex-direction: column;
     }
     #course .course-base {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
     }
     #course .course-box img {
         width: 100%;
