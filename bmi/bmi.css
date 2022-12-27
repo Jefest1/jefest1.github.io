@@ -8,6 +8,7 @@
         min-height: 100vh;
         background: linear-gradient(to top left, rgba(227, 252, 2, 0.8), rgba(3, 250, 147, 0.8));
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
     }
     
     #main {
